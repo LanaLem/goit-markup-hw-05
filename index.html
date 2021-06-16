@@ -20,7 +20,7 @@
                 <a href="./index.html" class="logo link" lang="en">Web<span class="logo-part-dark">Studio</span></a>
 
                 <ul class="list nav-list">
-                    <li class="nav-item"><a href="./index.html" class="link nav-paragraph studio-link">Студия</a></li>
+                    <li class="nav-item studio"><a href="./index.html" class="link nav-paragraph studio-link">Студия</a></li>
                     <li class="nav-item"><a href="./portfolio.html" class="link nav-paragraph">Портфолио</a></li>
                     <li class="nav-item"><a href="#adress" class="link nav-paragraph">Контакты</a></li>
                 </ul>
@@ -52,7 +52,7 @@
         <section class="section hero">
             <div class="container hero-position">
                 <h1 class="head-title">Эффективные решения <br />для вашего бизнеса</h1>
-                <button type="button" class="service">Заказать услугу</button>
+                <button type="button" class="service" data-modal-open>Заказать услугу</button>
             </div>
         </section>
         
@@ -106,9 +106,24 @@
             <div class="container">
                 <h2 class="section-title">Чем мы занимаемся</h2>
                 <ul class="list skills-list">
-                    <li><img class="foto" src="./images/box1.jpg" alt="Рабочий процесс на планшете." width="370" /></li>
-                    <li><img class="foto" src="./images/box2.jpg" alt="Рабочий процесс на ноутбуке и телефоне." width="370" /></li>
-                    <li><img class="foto" src="./images/box3.jpg" alt="Логотип на экране планшета." width="370" /></li>
+                    <li class="skill-item">
+                        <img class="foto" src="./images/box1.jpg" alt="Рабочий процесс на планшете." width="370" />
+                        <div class="our-app">
+                            <p class="text-app">Десктопные приложения</p>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <img class="foto" src="./images/box2.jpg" alt="Рабочий процесс на ноутбуке и телефоне." width="370" />
+                        <div class="our-app">
+                            <p class="text-app">Мобильные приложения</p>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <img class="foto" src="./images/box3.jpg" alt="Логотип на экране планшета." width="370" />
+                        <div class="our-app">
+                            <p class="text-app">Дизайнерские решения</p>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -373,5 +388,16 @@
             </div>
         </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="close" data-modal-close>
+                <svg width="11">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
